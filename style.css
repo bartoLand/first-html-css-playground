@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+header {
+    display: block;
+    height: 200px;
+    width: 100vw;
+    text-align: center;
+}
+
+.main {
+    width: 100vw;
+}
+
+aside {
+    width: 100vw;
+}
+
+header h1 {
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+header h2 {
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+h2 span {
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+}
+
+.post1 {
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 4px 0 grey;
+}
+
+.post1 img {
+    height: 25vw;
+    width: 100%;
+}
+
+.post1 h1 {
+    font-size: 30px;
+    padding: 15px 0 10px 12px;
+}
+
+.post1 h2 {
+    font-size: 20px;
+    padding: 15px 0 10px 20px;
+}
+
+.post1 p {
+    font-size: 15px;
+    padding: 10px 0 30px 20px;
+    line-height: 1.5;
+}
+
+.post1 button {
+    border: 1px solid lightgrey;
+    padding: 15px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.post1 span {
+    padding: 0 20px;
+}
+
+.post1 a {
+    display: none;
+}
+
+.post2 {
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 4px 0 grey;
+}
+
+.post2 img {
+    height: 25vw;
+    width: 100%;
+}
+
+.post2 h1 {
+    font-size: 30px;
+    padding: 15px 0 10px 12px;
+}
+
+.post2 h2 {
+    font-size: 20px;
+    padding: 15px 0 10px 20px;
+}
+
+.post2 p {
+    font-size: 15px;
+    padding: 10px 0 30px 20px;
+    line-height: 1.5;
+}
+
+.post2 button {
+    border: 1px solid lightgrey;
+    padding: 15px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.post2 span {
+    padding: 0 20px;
+}
+
+.post2 a {
+    display: none;
+}
+
+aside .about {
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 4px 0 grey;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about h1 {
+    font-size: 30px;
+    padding: 15px 0 10px 12px;
+}
+
+.about p {
+    font-size: 15px;
+    padding: 10px 0 30px 20px;
+    line-height: 1.5;
+}
+
+aside .posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    box-shadow: 0 0 4px 0 grey;
+    margin: 20px auto;
+    position: relative;
+}
+
+.top {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    background-color: lightgrey;
+}
+
+ul {
+    width: 100%;
+    line-height: 100%
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    width: 100%;
+    height: 90px;
+}
+
+li span {
+    line-height: 80%;
+    display: block;
+    padding: 30px;
+}
+
+li img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button:hover,
+li:hover {
+    background-color: lightgrey;
+}
+
+aside .tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    box-shadow: 0 0 4px 0 grey;
+    margin: 20px auto;
+}
+
+.tags .links {
+    padding: 15px 20px 20px 20px;
+    line-height: 300%;
+}
+
+.tags a {
+    background-color: lightgrey;
+    margin-left: 3px;
+    padding: 5px;
+}
+
+div.links a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer {
+    height: 150px;
+    bottom: 0;
+    width: 100vw;
+    background-color: grey;
+}
+
+footer a {
+    position: absolute;
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+    left: 20px;
+    margin-top: 35px;
+}
+
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .next {
+    left: 130px;
+}
+
+footer .back {
+    opacity: 0.4;
+}
+
+@media (min-width: 980px) {
+    .wrapper {
+        display: flex;
+    }
+
+    .main {
+        width: 66%;
+    }
+
+    aside {
+        width: 34%;
+    }
+
+    li span {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .wrapper {
+        max-width: 1401px;
+        margin: auto;
+    }
+
+    .post1 img,
+    .post2 img {
+        height: 300px;
+    }
+}
